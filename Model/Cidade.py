@@ -2,10 +2,15 @@ class Cidade:
 
 
     def __init__(self):
+        self.__nomeCidade = None
         self.__Filial = []
         self.__Estado = None
 
+    def setNomeCidade(self, nomeCidade):
+        self.__nomeCidade = nomeCidade
 
+    def getNomeCidade(self):
+        return self.__nomeCidade
 
     def setFilial(self, Filial):
         self.__Filial = Filial

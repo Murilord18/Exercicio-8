@@ -2,13 +2,31 @@ class Empresa:
 
 
     def __init__(self):
-        self.__Funcionario = None
+        self.__Diretor = None
+        self.__nomeEmpresa = None
+        self.__Funcionario = []
         self.__Filial = []
         self.__Departamento = []
 
-    
+    def setDiretor(self, Diretor):
+        self.__Diretor = Diretor
+
+    def getDiretor(self):
+        return self.__Diretor
+
+    def setNomeEmpresa(self, nomeEmpresa):
+        self.__nomeEmpresa = nomeEmpresa
+
+    def getNomeEmpresa(self):
+        return self.__nomeEmpresa
 
     def setFuncionario(self,Funcionario):
+        self.__Funcionario = Funcionario
+    
+    def addFuncionario(self, Funcionario):
+        self.__Funcionario.append(Funcionario)
+
+    def removeFuncionario(self, Funcionario):
         self.__Funcionario = Funcionario
 
     def getFuncionario(self):
