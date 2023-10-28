@@ -15,3 +15,6 @@ if __name__ == "__main__":
     estado1 = Estado()
     cidade1 = Cidade()
     empresa1 = Empresa()
+    filial1 = Filial()
+    departamento1 = Departamento()
+    grupo1 = Grupo()
