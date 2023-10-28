@@ -1,15 +1,22 @@
 class Grupo:
 
     def __init__(self):
+        self.__Presidente = None
         self.__Pais = None
         self.__Empresa = []
-        self.__Funcionario = None
+        self.__Funcionario = []
 
     def setPais(self, Pais):
         self.__Pais = Pais
     
     def getpais(self):
         return self.__Pais
+    
+    def setPresidente(self, Presidente):
+        self.__Presidente = Presidente
+        
+    def getPresidente(self):
+        return self.__Presidente
     
 
     
@@ -28,6 +35,12 @@ class Grupo:
 
 
     def setFuncionario(self, Funcionario):
+        self.__Funcionario = Funcionario
+
+    def addFuncionario(self, Funcionario):
+        self.__Funcionario.append(Funcionario)
+
+    def removeFuncionario(self, Funcionario):
         self.__Funcionario = Funcionario
     
     def getFuncionario(self):

@@ -1,9 +1,22 @@
 class Filial:
 
     def __init__(self):
+        self.__Coordenador = None
+        self.__numeroFilial = None
         self.__Funcionario = []
         self.__Cidade = None
+    
+    def setCoordenador(self, Coordenador):
+        self.__Coordenador = Coordenador
 
+    def getCoordenador(self):
+        return self.__Coordenador
+
+    def setNumeroFilial(self, numeroFilial):
+        self.__numeroFilial = numeroFilial
+
+    def getNumeroFilial(self):
+        return self.__numeroFilial
     
     def setFuncionario(self, Funcionario):
         self.__Funcionario = Funcionario

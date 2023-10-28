@@ -1,13 +1,46 @@
 class Funcionario:
 
     def __init__(self):
+        self.__Diretor = None
+        self.__Presidente = None
+        self.__Coordenador = None
+        self.__Chefe = None
+        self.__Id = None
         self.__Grupo = []
         self.__Departamento = None
         self.__Empresa = []
         self.__Escolaridade = None
         self.__Filial = None
 
+    def setDiretor(self, Diretor):
+        self.__Diretor = Diretor
 
+    def getDiretor(self):
+        return self.__Diretor
+
+    def setPresidente(self, Presidente):
+        self.__Presidente = Presidente
+        
+    def getPresidente(self):
+        return self.__Presidente
+
+    def setCoordenador(self, Coordenador):
+        self.__Coordenador = Coordenador
+
+    def getCoordenador(self):
+        return self.__Coordenador
+
+    def setChefe(self, Chefe):
+        self.__Chefe = Chefe
+
+    def getChefe(self):
+        return self.__Chefe
+
+    def setId(self, Id):
+        self.__Id = Id
+
+    def getId(self):
+        return self.__Id
 
     def setGrupo(self, Grupo):
         self.__Grupo = Grupo
@@ -20,9 +53,6 @@ class Funcionario:
 
     def getGrupo(self):
         return self.__Grupo
-    
-
-
 
     def setDepartamento(self, Departamento):
         self.__Departamento = Departamento
@@ -30,9 +60,6 @@ class Funcionario:
     def getDepartamento(self):
         return self.__Departamento
     
-
-
-
     def setEmpresa(self, Empresa):
         self.__Empresa = Empresa
 
@@ -44,15 +71,12 @@ class Funcionario:
 
     def getEmpresa(self):
         return self.__Empresa
-    
 
     def setEscolaridade(self,Escolaridade):
         self.__Escolaridade = Escolaridade
 
     def getEscolaridade(self):
         return self.__Escolaridade
-    
-
 
     def setFilial(self,Filial):
         self.__Filial = Filial
