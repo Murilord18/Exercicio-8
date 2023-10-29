@@ -5,7 +5,7 @@ class Funcionario:
         self.__Presidente = None
         self.__Coordenador = None
         self.__Chefe = None
-        self.__Id = None
+        self.__Nome = None
         self.__Grupo = []
         self.__Departamento = None
         self.__Empresa = []
@@ -36,11 +36,11 @@ class Funcionario:
     def getChefe(self):
         return self.__Chefe
 
-    def setId(self, Id):
-        self.__Id = Id
+    def setNome(self, Nome):
+        self.__Nome = Nome
 
-    def getId(self):
-        return self.__Id
+    def getNome(self):
+        return self.__Nome
 
     def setGrupo(self, Grupo):
         self.__Grupo = Grupo
