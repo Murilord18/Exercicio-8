@@ -1,11 +1,18 @@
 class Grupo:
 
     def __init__(self):
+        self.__nomeGrupo = None
         self.__Presidente = None
         self.__escolaridadePresidente = None
         self.__Pais = None
         self.__Empresa = []
         self.__Funcionario = []
+
+    def setNomeGrupo(self, nomeGrupo):
+        self.__nomeGrupo = nomeGrupo
+
+    def getNomeGrupo(self):
+        return self.__nomeGrupo
 
     def setPais(self, Pais):
         self.__Pais = Pais

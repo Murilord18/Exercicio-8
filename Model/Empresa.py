@@ -7,6 +7,7 @@ class Empresa:
         self.__Funcionario = []
         self.__Filial = []
         self.__Departamento = []
+        self.__Grupo = None
 
     def setDiretor(self, Diretor):
         self.__Diretor = Diretor
@@ -41,17 +42,14 @@ class Empresa:
     def setFilial(self, Filial):
         self.__Filial = Filial
 
-    def addEscola(self, Filial):
+    def addFilial(self, Filial):
         self.__Filial.append(Filial)
 
-    def removeEscola(self, Filial):
+    def removeFilail(self, Filial):
         self.__Filial.remove(Filial)
 
     def getFilial(self):
         return self.__Filial
-    
-
-
 
     def SetDepartamento(self, Departamento):
         self.__Departamento = Departamento
@@ -65,3 +63,8 @@ class Empresa:
     def getDepartamento(self):
         return self.__Departamento
     
+    def setGrupo(self, Grupo):
+        self.__Grupo = Grupo
+
+    def getGrupo(self):
+        return self.__Grupo

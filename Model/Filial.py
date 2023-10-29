@@ -6,6 +6,7 @@ class Filial:
         self.__numeroFilial = None
         self.__Funcionario = []
         self.__Cidade = None
+        self.__Empresa = None
     
     def setCoordenador(self, Coordenador):
         self.__Coordenador = Coordenador
@@ -41,4 +42,11 @@ class Filial:
         self.__Cidade = Cidade
 
     def getCidade(self):
-        return self.__Cidade   
+        return self.__Cidade
+    
+    def setEmpresa(self,Empresa):
+        self.__Empresa = Empresa
+
+    def getEmpresa(self,):
+        return self.__Empresa
+    
