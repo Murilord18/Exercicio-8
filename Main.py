@@ -62,7 +62,7 @@ if __name__ == "__main__":
     #Estado
     estado1.setSiglaEstado('MG')
     estado1.setPais(pais1.getNomePais())
-    pais1.addEstados(estado1.getSiglaEstado())
+    pais1.setEstado(estado1.getSiglaEstado())
     
     #Cidade 1
     cidade1.setNomeCidade('Juiz de Fora')
@@ -86,7 +86,7 @@ if __name__ == "__main__":
     escolaridade2.addFuncionario(funcionario10.getNome())
 
     grupo1.setPais(pais1.getNomePais())
-    pais1.addSedes(grupo1.getNomeGrupo())
+    pais1.setSedes(grupo1.getNomeGrupo())
 
     #Empresa
     empresa1.setNomeEmpresa('Amazonas')
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     empresa1.addFilial(filial1.getNumeroFilial())
 
     filial1.setCidade(cidade1.getNomeCidade())
-    cidade1.addFilial(filial1.getNumeroFilial())
+    cidade1.setFilial(filial1.getNumeroFilial())
 
     #Filial 2
     filial2.setNumeroFilial('002')
@@ -161,7 +161,7 @@ if __name__ == "__main__":
     empresa1.addFilial(filial2.getNumeroFilial())
 
     filial2.setCidade(cidade2.getNomeCidade())
-    cidade2.addFilial(filial2.getNumeroFilial())
+    cidade2.setFilial(filial2.getNumeroFilial())
 
     #Funcionario 1
     funcionario1.setNome('Matosu')
@@ -211,7 +211,7 @@ if __name__ == "__main__":
     escolaridade1.addFuncionario(funcionario3.getNome())
 
     funcionario3.setFilial(filial2.getNumeroFilial())
-    funcionario3.setCoordenador(filial2.getNumeroFilial())
+    funcionario3.setCoordenador(filial2.getCoordenador())
     filial2.addFuncionario(funcionario3.getNome())
 
     funcionario3.setDepartamento(departamento2.getId())
@@ -232,7 +232,7 @@ if __name__ == "__main__":
     escolaridade2.addFuncionario(funcionario4.getNome())
 
     funcionario4.setFilial(filial2.getNumeroFilial())
-    funcionario4.setCoordenador(filial2.getNumeroFilial())
+    funcionario4.setCoordenador(filial2.getCoordenador())
     filial2.addFuncionario(funcionario4.getNome())
 
     funcionario4.setDepartamento(departamento2.getId())
@@ -362,5 +362,101 @@ if __name__ == "__main__":
     print('FUNCIONARIO 1')
     print()
     print('Nome:', funcionario1.getNome())
+    print('Escolaridade do Funcionario:', funcionario1.getEscolaridade())
+    print('Grupo:', funcionario1.getGrupo())
+    print('Presidente:', funcionario1.getPresidente())
+    print('Empresa:', funcionario1.getEmpresa())
+    print('Diretor:', funcionario1.getDiretor())
+    print('Departamento:', funcionario1.getDepartamento())
+    print('Chefe:', funcionario1.getChefe())
+    print('Filial:', funcionario1.getFilial())
+    print('Coordenador:', funcionario1.getCoordenador())
+    print()
 
+    print('------------------------------------------')
+    print()
+    print('FUNCIONARIO 2')
+    print()
+    print('Nome:', funcionario2.getNome())
+    print('Escolaridade do Funcionario:', funcionario2.getEscolaridade())
+    print('Grupo:', funcionario2.getEmpresa())
+    print('Presidente:', funcionario2.getPresidente())
+    print('Empresa:', funcionario2.getEmpresa())
+    print('Diretor:', funcionario2.getDiretor())
+    print('Departamento:', funcionario2.getDepartamento())
+    print('Chefe:', funcionario2.getChefe())
+    print('Filial:', funcionario2.getFilial())
+    print('Coordenador:', funcionario2.getCoordenador())
+    print()
 
+    print('------------------------------------------')
+    print()
+    print('FUNCIONARIO 3')
+    print()
+    print('Nome:', funcionario3.getNome())
+    print('Escolaridade do Funcionario:', funcionario3.getEscolaridade())
+    print('Grupo:', funcionario3.getGrupo())
+    print('Presidente:', funcionario3.getPresidente())
+    print('Empresa:', funcionario1.getEmpresa())
+    print('Diretor:', funcionario3.getDiretor())
+    print('Departamento:', funcionario3.getDepartamento())
+    print('Chefe:', funcionario3.getChefe())
+    print('Filial:', funcionario3.getFilial())
+    print('Coordenador:', funcionario3.getCoordenador())
+    print()
+
+    print('------------------------------------------')
+    print()
+    print('FUNCIONARIO 4')
+    print()
+    print('Nome:', funcionario4.getNome())
+    print('Escolaridade do Funcionario:', funcionario4.getEscolaridade())
+    print('Grupo:', funcionario4.getGrupo())
+    print('Presidente:', funcionario4.getPresidente())
+    print('Empresa:', funcionario4.getEmpresa())
+    print('Diretor:', funcionario4.getDiretor())
+    print('Departamento:', funcionario4.getDepartamento())
+    print('Chefe:', funcionario4.getChefe())
+    print('Filial:', funcionario4.getFilial())
+    print('Coordenador:', funcionario4.getCoordenador())
+    print()
+
+    print('------------------------------------------')
+    print()
+    print('CIDADE 1')
+    print()
+    print('Nome:', cidade1.getNomeCidade())
+    print('Estado:', cidade1.getEstado())
+    print('Filial:', cidade1.getFilial())
+    print()
+
+    print('------------------------------------------')
+    print()
+    print('CIDADE 2')
+    print()
+    print('Nome:', cidade2.getNomeCidade())
+    print('Estado:', cidade2.getEstado())
+    print('Filial:', cidade1.getFilial())
+    print()
+
+    print('------------------------------------------')
+    print()
+    print('ESTADO')
+    print()
+    print('Sigla do Estado:', estado1.getSiglaEstado())
+    print('Pais:', estado1.getPais())
+    print('Cidades:')
+    for Cidade in estado1.getCidade():
+        print(Cidade)
+    print()
+    
+    print('------------------------------------------')
+    print()
+    print('PAIS')
+    print()
+    print('Nome:', pais1.getNomePais())
+    print('Estado:', pais1.getEstado())
+    print('Grupo:', pais1.getSedes())
+    print()
+
+    print('------------------------------------------')

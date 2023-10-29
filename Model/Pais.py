@@ -11,7 +11,7 @@ class Pais:
     def getNomePais(self):
         return self.__nomePais
 
-    def SetSedes(Self, Sedes):
+    def setSedes(Self, Sedes):
         Self.__Sedes = Sedes
 
     def addSedes(self, Sedes):
@@ -32,6 +32,6 @@ class Pais:
     def removeEstados(self, Estados):
         self.__Estados.remove(Estados)
     
-    def getEstado(self, Estados):
+    def getEstado(self):
         return self.__Estados
     
