@@ -2,6 +2,7 @@ class Filial:
 
     def __init__(self):
         self.__Coordenador = None
+        self.__escolaridadeCoordenador = None
         self.__numeroFilial = None
         self.__Funcionario = []
         self.__Cidade = None
@@ -11,6 +12,12 @@ class Filial:
 
     def getCoordenador(self):
         return self.__Coordenador
+    
+    def setEscolaridadeCoordenador(self, escolaridadeCoordenador):
+        self.__escolaridadeCoordenador = escolaridadeCoordenador
+
+    def getEscolaridadeCoordenador(self):
+        return self.__escolaridadeCoordenador
 
     def setNumeroFilial(self, numeroFilial):
         self.__numeroFilial = numeroFilial
