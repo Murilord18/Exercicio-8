@@ -29,7 +29,7 @@ class Grupo:
     def setEscolaridadePresidente(self, escolaridadePresidente):
         self.__escolaridadePresidente = escolaridadePresidente
 
-    def getEscolaridadeCoordenador(self):
+    def getEscolaridadePresidente(self):
         return self.__escolaridadePresidente
 
     def setEmpresa(self,Empresa):

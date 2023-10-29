@@ -34,7 +34,7 @@ class Empresa:
         self.__Funcionario.append(Funcionario)
 
     def removeFuncionario(self, Funcionario):
-        self.__Funcionario = Funcionario
+        self.__Funcionario.remove(Funcionario)
 
     def getFuncionario(self):
         return self.__Funcionario
