@@ -1,8 +1,8 @@
 class Empresa:
 
-
     def __init__(self):
         self.__Diretor = None
+        self.__escolaridadeDiretor = None
         self.__nomeEmpresa = None
         self.__Funcionario = []
         self.__Filial = []
@@ -13,6 +13,12 @@ class Empresa:
 
     def getDiretor(self):
         return self.__Diretor
+    
+    def setEscolaridadeDiretor(self, escolaridadeDiretor):
+        self.__escolaridadeDiretor = escolaridadeDiretor
+
+    def getEscolaridadeDiretor(self):
+        return self.__escolaridadeDiretor
 
     def setNomeEmpresa(self, nomeEmpresa):
         self.__nomeEmpresa = nomeEmpresa
@@ -31,8 +37,6 @@ class Empresa:
 
     def getFuncionario(self):
         return self.__Funcionario
-
-
 
     def setFilial(self, Filial):
         self.__Filial = Filial

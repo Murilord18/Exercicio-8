@@ -1,6 +1,5 @@
 class Cidade:
 
-
     def __init__(self):
         self.__nomeCidade = None
         self.__Filial = []
@@ -24,7 +23,6 @@ class Cidade:
     def getFilial(self):
         return self.__Filial
     
-
     def setEstado(self, Estado):
         self.__Estado = Estado
 

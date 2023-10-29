@@ -35,9 +35,7 @@ class Filial:
         self.__Funcionario.remove(Funcionario)
 
     def getFuncionario(self):
-        return self.__Funcionario   
-    
-
+        return self.__Funcionario       
 
     def setCidade(self, Cidade):
         self.__Cidade = Cidade

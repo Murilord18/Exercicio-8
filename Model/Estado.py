@@ -23,7 +23,6 @@ class Estado:
     def getCidade(self):
         return self.__Cidade 
     
-
     def setPais(self, Pais):
         self.__Pais = Pais
 

@@ -1,9 +1,9 @@
 class Departamento:
 
-
     def __init__(self):
         self.__Id = None
         self.__Chefe = None
+        self.__escolaridadeChefe = None
         self.__Funcionario = []
         self.__Empresa = None
 
@@ -18,6 +18,12 @@ class Departamento:
 
     def getChefe(self):
         return self.__Chefe
+    
+    def setEscolaridadeChefe(self, escolardiadeChefe):
+        self.__escolaridadeChefe = escolardiadeChefe
+
+    def getEscolaridadeChefe(self):
+        return self.__escolaridadeChefe
 
     def setFuncionario(self,Funcionario):
         self.__Funcionario = Funcionario
@@ -29,9 +35,7 @@ class Departamento:
         self.__Funcionario = Funcionario
 
     def getFuncionario(self):
-        return self.__Funcionario
-    
-
+        return self.__Funcionario    
 
     def setEmpresa(self,Empresa):
         self.__Empresa = Empresa

@@ -1,6 +1,5 @@
 class Pais:
 
-
     def __init__(self):
         self.__nomePais = None
         self.__Sedes = []
