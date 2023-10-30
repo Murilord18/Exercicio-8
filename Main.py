@@ -8,7 +8,7 @@ from Model.Funcionário import Funcionario
 from Model.Grupo import Grupo
 from Model.Pais import Pais   
 
-if __name__ == "__main__":
+def Principal():
 
     pais1 = Pais()
 
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     empresa1.addFilial(filial1.getNumeroFilial())
 
     filial1.setCidade(cidade1.getNomeCidade())
-    cidade1.setFilial(filial1.getNumeroFilial())
+    cidade1.setFilial(filial2.getNumeroFilial())
 
     #Filial 2
     filial2.setNumeroFilial('002')
@@ -460,3 +460,6 @@ if __name__ == "__main__":
     print()
 
     print('------------------------------------------')
+
+if __name__ == '__main__':
+    Principal()
