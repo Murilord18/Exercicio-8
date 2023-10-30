@@ -8,7 +8,7 @@ from Model.Funcionário import Funcionario
 from Model.Grupo import Grupo
 from Model.Pais import Pais   
 
-def Principal():
+if __name__ == "__main__":
 
     pais1 = Pais()
 
@@ -460,6 +460,3 @@ def Principal():
     print()
 
     print('------------------------------------------')
-
-if __name__ == '__main__':
-    Principal()
