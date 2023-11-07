@@ -28,3 +28,9 @@ class Estado:
 
     def getPais(self):
         return self.__Pais
+    
+    def listarCidades(self):
+        texto = ('')
+        for self.__Cidade in self.getCidade():
+            texto += (self.__Cidade + ' ')
+        return texto

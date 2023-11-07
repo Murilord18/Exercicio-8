@@ -55,3 +55,15 @@ class Grupo:
     
     def getFuncionario(self):
         return self.__Funcionario
+    
+    def listarEmpresa(self):
+        texto = ('')
+        for self.__Empresa in self.getEmpresa():
+            texto += (self.__Empresa + ' ')
+        return texto
+    
+    def listarFuncionario(self):
+        texto = ('')
+        for self.__Funcionario in self.getFuncionario():
+            texto += (self.__Funcionario + ' ')
+        return texto

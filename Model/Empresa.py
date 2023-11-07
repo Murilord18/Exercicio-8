@@ -68,3 +68,21 @@ class Empresa:
 
     def getGrupo(self):
         return self.__Grupo
+    
+    def listarDepartamento(self):
+        texto = ('')
+        for self.__Departamento in self.getDepartamento():
+            texto += (self.__Departamento + ' ')
+        return texto
+    
+    def listarFilial(self):
+        texto = ('')
+        for self.__Filial in self.getFilial():
+            texto += (self.__Filial + ' ')
+        return texto
+    
+    def listarFuncionario(self):
+        texto = ('')
+        for self.__Funcionario in self.getFuncionario():
+            texto += (self.__Funcionario + ' ')
+        return texto

@@ -43,3 +43,8 @@ class Departamento:
     def getEmpresa(self,):
         return self.__Empresa
     
+    def listarFuncionario(self):
+        texto = ('')
+        for self.__Funcionario in self.getFuncionario():
+            texto += (self.__Funcionario + ' ')
+        return texto

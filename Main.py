@@ -8,7 +8,7 @@ from Model.Funcionário import Funcionario
 from Model.Grupo import Grupo
 from Model.Pais import Pais   
 
-if __name__ == "__main__":
+def Principal():
 
     pais1 = Pais()
 
@@ -144,7 +144,7 @@ if __name__ == "__main__":
     empresa1.addFilial(filial1.getNumeroFilial())
 
     filial1.setCidade(cidade1.getNomeCidade())
-    cidade1.setFilial(filial2.getNumeroFilial())
+    cidade1.setFilial(filial1.getNumeroFilial())
 
     #Filial 2
     filial2.setNumeroFilial('002')
@@ -253,9 +253,7 @@ if __name__ == "__main__":
     print('ESCOLARIDADE 1')
     print()
     print('Nivel de Escolaridade:', escolaridade1.getNivelEscolaridade())
-    print('Funcionarios:')
-    for Funcionario in escolaridade1.getFuncionario():
-        print(Funcionario)
+    print('Funcionarios:', escolaridade1.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -263,9 +261,7 @@ if __name__ == "__main__":
     print('ESCOLARIDADE 2')
     print()
     print('Nivel de Escolaridade:', escolaridade2.getNivelEscolaridade())
-    print('Funcionarios:')
-    for Funcionario in escolaridade2.getFuncionario():
-        print(Funcionario)
+    print('Funcionarios:', escolaridade2.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -276,12 +272,8 @@ if __name__ == "__main__":
     print('Pais:', grupo1.getpais())
     print('Presidente:', grupo1.getPresidente())
     print('Escolaridade do Presidente:', grupo1.getEscolaridadePresidente())
-    print('Empresas:')
-    for Empresa in grupo1.getEmpresa():
-        print(Empresa)
-    print('Funcionarios:')
-    for Funcionario in grupo1.getFuncionario():
-        print(Funcionario)
+    print('Empresas:', grupo1.listarEmpresa())
+    print('Funcionarios:', grupo1.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -292,15 +284,9 @@ if __name__ == "__main__":
     print('Grupo:', empresa1.getGrupo())
     print('Diretor:', empresa1.getDiretor())
     print('Escolaridade do Diretor:', empresa1.getEscolaridadeDiretor())
-    print('Departamentos:')
-    for Departamento in empresa1.getDepartamento():
-        print(Departamento)
-    print('Filiais:')
-    for Filial in empresa1.getFilial():
-        print(Filial)
-    print('Funcionarios:')
-    for Funcionario in empresa1.getFuncionario():
-        print(Funcionario)
+    print('Departamentos:', empresa1.listarDepartamento())
+    print('Filiais:', empresa1.listarFilial())
+    print('Funcionarios:', empresa1.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -311,9 +297,7 @@ if __name__ == "__main__":
     print('Empresa:', departamento1.getEmpresa())
     print('Chefe:', departamento1.getChefe())
     print('Escolaridade do Chefe:', departamento1.getEscolaridadeChefe())
-    print('Funcionarios:')
-    for Funcionario in departamento1.getFuncionario():
-        print(Funcionario)
+    print('Funcionarios:', departamento1.listarFuncionario())
     print()
     
     print('------------------------------------------')
@@ -324,9 +308,7 @@ if __name__ == "__main__":
     print('Empresa:', departamento2.getEmpresa())
     print('Chefe:', departamento2.getChefe())
     print('Escolaridade do Chefe:', departamento2.getEscolaridadeChefe())
-    print('Funcionarios:')
-    for Funcionario in departamento2.getFuncionario():
-        print(Funcionario)
+    print('Funcionarios:', departamento2.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -338,9 +320,7 @@ if __name__ == "__main__":
     print('Empresa:', filial1.getEmpresa())
     print('Coordenador:', filial1.getCoordenador())
     print('Escolaridade do Coordenador:', filial1.getEscolaridadeCoordenador())
-    print('Funcionarios:')
-    for Funcionario in filial1.getFuncionario():
-        print(Funcionario)
+    print('Funcionarios:', filial1.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -352,9 +332,7 @@ if __name__ == "__main__":
     print('Empresa:', filial2.getEmpresa())
     print('Coordenador:', filial2.getCoordenador())
     print('Escolaridade do Coordenador:', filial2.getEscolaridadeCoordenador())
-    print('Funcionarios:')
-    for Funcionario in filial2.getFuncionario():
-        print(Funcionario)
+    print('Funcionarios:', filial2.listarFuncionario())
     print()
 
     print('------------------------------------------')
@@ -436,7 +414,7 @@ if __name__ == "__main__":
     print()
     print('Nome:', cidade2.getNomeCidade())
     print('Estado:', cidade2.getEstado())
-    print('Filial:', cidade1.getFilial())
+    print('Filial:', cidade2.getFilial())
     print()
 
     print('------------------------------------------')
@@ -445,9 +423,7 @@ if __name__ == "__main__":
     print()
     print('Sigla do Estado:', estado1.getSiglaEstado())
     print('Pais:', estado1.getPais())
-    print('Cidades:')
-    for Cidade in estado1.getCidade():
-        print(Cidade)
+    print('Cidades:', estado1.listarCidades())
     print()
     
     print('------------------------------------------')
@@ -460,3 +436,7 @@ if __name__ == "__main__":
     print()
 
     print('------------------------------------------')
+
+if __name__ == '__main__':
+    Principal()
+
